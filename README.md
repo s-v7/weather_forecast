@@ -13,7 +13,7 @@ Make sure the following libraries are installed before running the script
 `requests`
 `Flask`
 `pandas`
-`scikit-learn`(contendo `MLPClassifier`)
+`scikit-learn`( `MLPClassifier`)
 `matplotlib`
 
 ### You can install them using the command:
