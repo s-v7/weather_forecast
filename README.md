@@ -13,7 +13,7 @@ Make sure the following libraries are installed before running the script
 `requests`
 `Flask`
 `pandas`
-`scikit-learn`(contendo `MLPClassifier`)
+`scikit-learn`( `MLPClassifier`)
 `matplotlib`
 
 ### You can install them using the command:
@@ -44,16 +44,16 @@ This function takes the name of a city as a parameter and performs the following
 
 This function receives a CEP as a parameter and performs the following actions:
 
--**Gets information about the CEP using the ViaCEP API.**
+- **Gets information about the CEP using the ViaCEP API.**
 
--**Displays the zip code, street, complement, neighborhood, city and UF**
+- **Displays the zip code, street, complement, neighborhood, city and UF**
 
 ### Comments
 
--**Make sure to replace 'YOUR KEY' in the HGBrasil API URL with your actual API key.**
+- **Make sure to replace 'YOUR KEY' in the HGBrasil API URL with your actual API key.**
 
--**The `get_information_cep(zip_code)` function is called automatically after obtaining the CEP information. 
-If you don't want this functionality, comment out or remove the new_prevision(city) function call `new_weather_forecast(city)`
+- **The `get_information_cep(zip_code)` function is called automatically after obtaining the CEP information. 
+If you don't want this functionality, comment out or remove the new_prevision(city) function call `new_weather_forecast(city)`**
 
 ![Data](data_meteorological.png)
 
