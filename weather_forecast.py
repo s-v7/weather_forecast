@@ -32,9 +32,14 @@ def new_weather_forecast(city):
     # Converting data into a pandas DataFrame
     df = pd.DataFrame(data)
 
-    # Writing to a CSV file
-    df.to_csv("clima_tempo.csv")
+    caminho_file = 'clima_tempo.csv'
 
+    with open(caminho_file, 'a', newline='') as file:
+    	# Writing to a CSV file
+    	df.to_csv(file, index=False, header=not file.tell())
+
+    print(f'[!!]Novos dados foram adicionados ao arquivo CSV com Sucesso!\n')
+    
     # Reading a CSV file
     #pd.read_csv("clima_tempo.csv")
 
